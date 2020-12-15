@@ -45,11 +45,64 @@
                 </div>
             </div>
         </div>
+
     </div>
 
     <div class="container">
         <div class="about">
-            about
+            <div class="about__title">
+                About Us
+            </div>
+            <div class="tab__container">
+                <div class="tab">
+                    <button class="tab__links" onclick="openCity(event, 'London')" id="defaultOpen">Title 1
+                        <img src="./images/tab_images/sword.png" alt="sword">
+                    </button>
+                    <button class="tab__links" onclick="openCity(event, 'Paris')">Title 2
+                        <img src="./images/tab_images/shield.png" alt="shield">
+                    </button>
+                    <button class="tab__links" onclick="openCity(event, 'Tokyo')">Title 3
+                        <img src="./images/tab_images/poison.png" alt="poison">
+                    </button>
+                </div>
+
+                <div id="London" class="tab__content">
+                    <p> 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit et odio sit
+                        amet
+                        finibus. Quisque fermentum orci eget odio pellentesque hendrerit. Ut at iaculis massa. Nulla
+                        sodales, eros tempus sagittis lobortis, tellus nibh ornare metus, eget accumsan nibh lacus sed
+                        leo. Morbi a nibh et leo dapibus fringilla at in mauris. Cras scelerisque maximus leo, a
+                        consequat massa fermentum nec. Maecenas libero tortor, mollis non ornare vel, malesuada
+                        pellentesque arcu. Aliquam libero nisl, tempor eget pretium vel, porttitor non mi. Vivamus
+                        condimentum, nulla eget malesuada tincidunt, est arcu eleifend nibh, tempus hendrerit est erat
+                        non nisl.
+                    </p>
+                </div>
+
+                <div id="Paris" class="tab__content">
+                    <p> 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit et odio sit
+                        amet
+                        finibus. Quisque fermentum orci eget odio pellentesque hendrerit. Ut at iaculis massa. Nulla
+                        sodales, eros tempus sagittis lobortis, tellus nibh ornare metus, eget accumsan nibh lacus sed
+                        leo. Morbi a nibh et leo dapibus fringilla at in mauris. Cras scelerisque maximus leo, a
+                        consequat massa fermentum nec. Maecenas libero tortor, mollis non ornare vel, malesuada
+                        pellentesque arcu. Aliquam libero nisl, tempor eget pretium vel, porttitor non mi. Vivamus
+                        condimentum, nulla eget malesuada tincidunt, est arcu eleifend nibh, tempus hendrerit est erat
+                        non nisl.</p>
+                </div>
+
+                <div id="Tokyo" class="tab__content">
+                    <p> 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit et odio sit
+                        amet
+                        finibus. Quisque fermentum orci eget odio pellentesque hendrerit. Ut at iaculis massa. Nulla
+                        sodales, eros tempus sagittis lobortis, tellus nibh ornare metus, eget accumsan nibh lacus sed
+                        leo. Morbi a nibh et leo dapibus fringilla at in mauris. Cras scelerisque maximus leo, a
+                        consequat massa fermentum nec. Maecenas libero tortor, mollis non ornare vel, malesuada
+                        pellentesque arcu. Aliquam libero nisl, tempor eget pretium vel, porttitor non mi. Vivamus
+                        condimentum, nulla eget malesuada tincidunt, est arcu eleifend nibh, tempus hendrerit est erat
+                        non nisl.</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -60,5 +113,6 @@
     </div>
 
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>
