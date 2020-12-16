@@ -8,7 +8,6 @@
 </head>
 <body>
 <div class="wrapper">
-
     <div class="container">
         <div class="main">
             <header class="header">
@@ -18,10 +17,30 @@
                     </div>
                     <span>historical quest</span>
                 </div>
+                <div class="dropdown">
+                    <button onclick="onDropdown()" class="dropbtn">Menu</button>
+                    <ul id="myDropdown" class="dropdown-content">
+                        <li class="header__list-item">
+                            <a href="#main">Main</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#about">About Us</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
                 <ul class="header__list">
-                    <li class="header__list-item">Main</li>
-                    <li class="header__list-item">About Us</li>
-                    <li class="header__list-item">Contacts</li>
+                    <li class="header__list-item">
+                        <a href="#main">Main</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#contacts">Contacts</a>
+                    </li>
                 </ul>
                 <div class="header__buttons">
                     <a class="header__button join" href="">Join Us</a>
@@ -29,7 +48,7 @@
                 </div>
             </header>
             <div class="main__content">
-                <div class="main__content-inner">
+                <div class="main__content-inner" id="main">
                     <h1 class="main__content-title">Historical quests for every taste</h1>
                     <p class="main__content-body">
                         At principle perfectly by sweetness do. If in so bred at dare rose lose good. How one dull get
@@ -49,19 +68,19 @@
     </div>
 
     <div class="container">
-        <div class="about">
+        <div class="about" id="about">
             <div class="about__title">
                 About Us
             </div>
             <div class="tab__container">
                 <div class="tab">
-                    <button class="tab__links" onclick="openCity(event, 'London')" id="defaultOpen">Title 1
+                    <button class="tab__links" onclick="openCity(event, 'London')" id="defaultOpen"><span>Title</span> 1
                         <img src="./images/tab_images/sword.png" alt="sword">
                     </button>
-                    <button class="tab__links" onclick="openCity(event, 'Paris')">Title 2
+                    <button class="tab__links" onclick="openCity(event, 'Paris')"><span>Title</span> 2
                         <img src="./images/tab_images/shield.png" alt="shield">
                     </button>
-                    <button class="tab__links" onclick="openCity(event, 'Tokyo')">Title 3
+                    <button class="tab__links" onclick="openCity(event, 'Tokyo')"><span>Title</span> 3
                         <img src="./images/tab_images/poison.png" alt="poison">
                     </button>
                 </div>
@@ -107,16 +126,19 @@
     </div>
 
     <div class="container">
-        <div class="contacts">
+        <div class="contacts" id="contacts">
             <div class="contacts__title">
                 Contacts
             </div>
             <div class="contacts__inner">
                 <div class="contacts__form">
-                    <form action="POST">
-                        <input type="text" placeholder="Your name">
-                        <input type="text" placeholder="Your email">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your question"></textarea>
+                    <form>
+                        <label for="name"></label>
+                        <input type="text" placeholder="Your name" id="name">
+                        <label for="email"></label>
+                        <input type="text" placeholder="Your email" id="email">
+                        <label for="text"></label>
+                        <textarea cols="30" rows="10" placeholder="Your question" id="text"></textarea>
                         <button>Send</button>
                     </form>
                 </div>

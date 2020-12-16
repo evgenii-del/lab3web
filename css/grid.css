@@ -1,0 +1,56 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col-10 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.col-1 {
+    width: calc(100% / 10);
+    background-color: tomato;
+}
+
+.col-2 {
+    width: calc(100% / 5);
+    background-color: sienna;
+}
+
+.col-3 {
+    width: calc(100% / 10 * 3);
+    background-color: darkslategray;
+}
+
+.col-4 {
+    width: calc(100% / 10 * 4);
+    background-color: turquoise;
+}
+
+.col-5 {
+    width: calc(100% / 2);
+    background-color: blanchedalmond;
+}
+
+.col-6 {
+    width: calc(100% / 10 * 6);
+    background-color: mediumspringgreen;
+}
+
+.col-7 {
+    width: calc(100% / 10 * 7);
+    background-color: sandybrown;
+}
+
+.col-8 {
+    width: calc(100% / 10 * 8);
+    background-color: gold;
+}
+
+.col-9 {
+    width: calc(100% / 10 * 9);
+    background-color: aqua;
+}
