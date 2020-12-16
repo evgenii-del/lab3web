@@ -47,6 +47,7 @@ body {
 
 .dropdown {
     position: relative;
+    text-align: end;
     display: none;
 }
 
@@ -59,7 +60,7 @@ body {
 .header .header__logo {
     display: flex;
     cursor: pointer;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
 }
 
@@ -356,11 +357,7 @@ body {
 }
 
 @media (max-width: 1000px) {
-    .header__logo span {
-        display: none;
-    }
-
-    .main__image img {
+    .main__image {
         display: none;
     }
 
@@ -376,6 +373,10 @@ body {
 }
 
 @media (max-width: 770px) {
+    .header__logo span {
+        display: none;
+    }
+
     .header .header__list {
         display: none;
     }

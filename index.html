@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Title</title>
 </head>
@@ -10,14 +11,14 @@
 <div class="wrapper">
     <div class="container">
         <div class="main">
-            <header class="header">
-                <div class="header__logo">
+            <header class="header col-10">
+                <div class="header__logo col-3">
                     <div class="logo">
                         HQ
                     </div>
                     <span>historical quest</span>
                 </div>
-                <div class="dropdown">
+                <div class="dropdown col-3">
                     <button onclick="onDropdown()" class="dropbtn">Menu</button>
                     <ul id="myDropdown" class="dropdown-content">
                         <li class="header__list-item">
@@ -31,7 +32,7 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="header__list">
+                <ul class="header__list col-3">
                     <li class="header__list-item">
                         <a href="#main">Main</a>
                     </li>
@@ -42,13 +43,13 @@
                         <a href="#contacts">Contacts</a>
                     </li>
                 </ul>
-                <div class="header__buttons">
+                <div class="header__buttons col-3">
                     <a class="header__button join" href="">Join Us</a>
                     <a class="header__button start" href="">Getting Started</a>
                 </div>
             </header>
-            <div class="main__content">
-                <div class="main__content-inner" id="main">
+            <div class="main__content col-10">
+                <div class="main__content-inner col-5" id="main">
                     <h1 class="main__content-title">Historical quests for every taste</h1>
                     <p class="main__content-body">
                         At principle perfectly by sweetness do. If in so bred at dare rose lose good. How one dull get
@@ -59,7 +60,7 @@
                         Call
                     </a>
                 </div>
-                <div class="main__image">
+                <div class="main__image col-5">
                     <img src="./images/hero.png" alt="hero">
                 </div>
             </div>
